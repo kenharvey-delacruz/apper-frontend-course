@@ -1,0 +1,432 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    background-color: #ffff;
+    border: #000 1px solid;
+}
+
+    /* NAVIGATION BAR */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.title {
+    height: 50px;
+    width: 150px;
+    border: #000 1px solid;
+    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    border: #000 1px solid;
+    padding: 10px 10px;
+    margin-right: 200px;
+}
+
+.menu li a {
+    height: 80px;
+    width: 200px;
+    padding: 0px 40px;
+    border: #000 1px solid;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border: #000 1px solid;
+    padding: 10px 10px;
+}
+
+.login li a {
+    height: 80px;
+    width: 200px;
+    padding: 0px 40px;
+    border: #000 1px solid;
+}
+
+
+/* End of NavBar */   
+
+/* End of Header */
+
+/* Start of Details */
+
+/* INFO */
+
+.info-container {
+    border: #000 1px solid;
+    margin: 5px;
+    padding: 50px
+}
+
+.gamify-container {
+    height: 500px;
+    border: #000 1px solid;
+    margin: 20px;
+}
+
+.gamify-container h4 {
+    height: 50px;
+    width: 200px;
+    border: #000 1px solid;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.gamify-container p {
+    height: 120px;
+    width: 400px;
+    border: #000 1px solid;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.gamify-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 50px;
+    list-style: none;
+}
+
+.gamify-cards li a {
+    border: #000 1px solid;
+    padding: 10px;
+
+}
+
+.gamify-cards h4 {
+    border: #000 1px solid;
+    padding: 5px;
+    width: 200px;
+    height: 30px;
+}
+
+.gamify-cards p {
+    display: inline-flex;
+    border: #000 1px solid;
+    padding: 5px;
+    width: 200px;
+    height: 100px;
+}
+
+/* START */
+
+.players-container {
+    height: 500px;
+    border: #000 1px solid;
+    margin: 20px;
+}
+
+.players-container h4 {
+    height: 50px;
+    width: 200px;
+    border: #000 1px solid;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.players-container p {
+    height: 120px;
+    width: 400px;
+    border: #000 1px solid;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.players-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 50px;
+    list-style: none;
+}
+
+.players-cards li a {
+    border: #000 1px solid;
+    padding: 10px;
+
+}
+
+.players-cards h4 {
+    border: #000 1px solid;
+    padding: 5px;
+    width: 200px;
+    height: 30px;
+}
+
+.players-cards p {
+    display: inline-flex;
+    border: #000 1px solid;
+    padding: 5px;
+    width: 200px;
+    height: 100px;
+}
+/* END */
+
+/* START */
+.levelup-container {
+    height: 500px;
+    border: #000 1px solid;
+    margin: 20px;
+}
+
+.levelup-container h4 {
+    height: 50px;
+    width: 200px;
+    border: #000 1px solid;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.levelup-container p {
+    height: 120px;
+    width: 400px;
+    border: #000 1px solid;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.levelup-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 50px;
+    list-style: none;
+}
+
+.levelup-cards li a {
+    border: #000 1px solid;
+    padding: 10px;
+
+}
+
+.levelup-cards h4 {
+    border: #000 1px solid;
+    padding: 5px;
+    width: 200px;
+    height: 30px;
+}
+
+.levelup-cards p {
+    display: inline-flex;
+    border: #000 1px solid;
+    padding: 5px;
+    width: 200px;
+    height: 100px;
+}
+/* END */
+
+/* INFO END */
+
+/* JOIN-FEATURED */
+
+.join-featured-container {
+    padding: 20px 20px;
+    border: #000 1px solid;
+    margin: 5px;
+}
+
+.join {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 5px;
+    border: #000 1px solid;
+}
+
+.join h4 {
+    height: 30px;
+    width: 130px;
+    border: #000 1px solid;
+    margin: auto;
+}
+
+.join-btn button {
+    height: 30px;
+    width: 150px;
+    margin: auto;
+}
+
+.featured {
+    padding: 20px 20px;
+    border: #000 1px solid;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.featured h4 {
+    margin: auto;
+    padding: 10px 5px;
+    width: 120px;
+    border: #000 1px solid;
+}
+
+.partners {
+    padding: 20px 20px;
+    border: #000 1px solid;
+    margin: 5px;
+}
+
+/* FEATURED END */
+
+/* CTA */
+
+.cta-container {
+    padding: 60px 20px;
+    border: #000 1px solid;
+}
+
+.cta-one {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border: #000 1px solid;
+    margin: 5px;
+    padding: 20px;
+}
+
+.cta-links h4 {
+    height: 30px;
+    width: 130px;
+    border: #000 1px solid;
+    margin: 10px;
+}
+
+.cta-links li {
+    height: 20px;
+    width: 130px;
+    list-style: none;
+    border: #000 1px solid;
+    margin: 2px;
+}
+
+.cta-two {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border: #000 1px solid;
+    margin: 5px;
+    padding: 10px;
+}
+
+.cta-help {
+    height: 80px;
+    width: 500px;
+    border: #000 1px solid;
+    margin: 5px;
+}
+
+.cta-help h4 {
+    display: flex;
+}
+
+.cta-donate {
+    margin-top: 40px;
+    border: #000 1px solid;
+    width: 150px;
+    height: 30px;
+}
+
+.cta-social {
+    justify-content: space-between;
+}
+
+.cta-social h4 {
+    height: 15px;
+    width: 80px;
+    border: #000 1px solid;
+    margin: 3px;
+    
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.logos li a img{
+    height: 30px;
+    width: 30px;
+    border: #000 1px solid;
+
+}
+
+
+/* CTA END */
+
+/* FOOTER */
+
+footer {
+    padding: 10px;
+    margin: 30px;
+    border: #000 1px solid;
+    
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    border: #000 1px solid;
+}
+
+.allrights {
+    display: flex;
+
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border: #000 1px solid;
+    padding: 10px 10px;
+}
+
+.footer-link li a {
+    height: 80px;
+    width: 200px;
+    padding: 5px 40px;
+    margin: 5px;
+    border: #000 1px solid;
+}
+
+/* END FOOTER */
