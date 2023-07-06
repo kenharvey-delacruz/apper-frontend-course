@@ -63,11 +63,104 @@ header {
 }
 
 
-/* End of NavBar */   
+/* END NAVBAR */   
 
-/* End of Header */
+/* END HEADER */
 
-/* Start of Details */
+/* MAIN */
+
+.motivate-signup {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: #000 1px solid;
+    margin: 5px;
+    padding: 50px;
+}
+
+.motivate {
+    border: #000 1px solid;
+    margin: auto;
+    padding: 50px;
+    width: 350px;
+}
+
+.motivate a{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: #000 1px solid;
+}
+
+.motivate h4 {
+    border: #000 1px solid;
+    margin: auto;
+    height: 30px;
+    width: 150px;
+}
+
+
+.motivate p {
+    border: #000 1px solid;
+    margin: auto;
+    height: 70px;
+    width: 250px;
+}
+
+/* SIGN UP */
+
+
+.signup {
+    border: #000 1px solid;
+    margin: auto;
+    width: 350px;
+    padding: 50px;
+}
+
+.signup h4 {
+    border: #000 1px solid;
+    margin: auto;
+    height: 30px;
+    width: 150px;
+}
+
+
+.signup p {
+    border: #000 1px solid;
+    margin: 10px;
+    padding: 5px;
+    height: 40px;
+    width: 250px;
+}
+
+.textboxes {
+    width: 250px;
+    border: #000 1px solid;
+}
+
+.textboxes input {
+    margin: 5px;
+    padding: 3px;
+    width: 230px;
+    border: #000 1px solid;
+}
+
+.signup-btn p {
+    height: 15px;
+    width: 250px;
+    margin: auto;
+}
+
+.signup-btn button{
+    height: 30px;
+    width: 250px;
+    margin: auto;
+}
+
+
+/* END SIGN UP */
+
+/* END MAIN */
 
 /* INFO */
 
