@@ -70,7 +70,7 @@ header {
 /* MAIN */
 
 .motivate-signup {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     border: #000 1px solid;
@@ -79,22 +79,25 @@ header {
 }
 
 .motivate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border: #000 1px solid;
-    margin: auto;
-    padding: 50px;
-    width: 350px;
+    padding: 20px;
+    width: 400px;
 }
 
-.motivate a{
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+.motivate img{
     border: #000 1px solid;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
 }
 
 .motivate h4 {
     border: #000 1px solid;
-    margin: auto;
+    margin: 10px;
     height: 30px;
     width: 150px;
 }
@@ -111,6 +114,10 @@ header {
 
 
 .signup {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border: #000 1px solid;
     margin: auto;
     width: 350px;
@@ -165,13 +172,19 @@ header {
 /* INFO */
 
 .info-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
     border: #000 1px solid;
     margin: 5px;
-    padding: 50px
+    padding: 50px;
 }
 
 .gamify-container {
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: #000 1px solid;
     margin: 20px;
 }
@@ -180,56 +193,48 @@ header {
     height: 50px;
     width: 200px;
     border: #000 1px solid;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .gamify-container p {
     height: 120px;
     width: 400px;
     border: #000 1px solid;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+
 }
 
 .gamify-cards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 32px;
-    padding: 50px;
     list-style: none;
 }
 
-.gamify-cards li a {
+.gamify-cards li a img {
     border: #000 1px solid;
-    padding: 10px;
-
+    width: 200px;
+    height: 200px;
+    margin: 10px;
 }
 
 .gamify-cards h4 {
     border: #000 1px solid;
-    padding: 5px;
     width: 200px;
     height: 30px;
 }
 
 .gamify-cards p {
-    display: inline-flex;
     border: #000 1px solid;
-    padding: 5px;
     width: 200px;
     height: 100px;
+    margin: 10px;
 }
 
 /* START */
 
 .players-container {
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: #000 1px solid;
     margin: 20px;
 }
@@ -238,56 +243,48 @@ header {
     height: 50px;
     width: 200px;
     border: #000 1px solid;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .players-container p {
     height: 120px;
     width: 400px;
     border: #000 1px solid;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+
 }
 
 .players-cards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 32px;
-    padding: 50px;
     list-style: none;
 }
 
-.players-cards li a {
+.players-cards li a img {
     border: #000 1px solid;
-    padding: 10px;
-
+    width: 200px;
+    height: 200px;
+    margin: 10px;
 }
 
 .players-cards h4 {
     border: #000 1px solid;
-    padding: 5px;
     width: 200px;
     height: 30px;
 }
 
 .players-cards p {
-    display: inline-flex;
     border: #000 1px solid;
-    padding: 5px;
     width: 200px;
     height: 100px;
+    margin: 10px;
 }
 /* END */
 
 /* START */
 .levelup-container {
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: #000 1px solid;
     margin: 20px;
 }
@@ -296,50 +293,40 @@ header {
     height: 50px;
     width: 200px;
     border: #000 1px solid;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .levelup-container p {
     height: 120px;
     width: 400px;
     border: #000 1px solid;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+
 }
 
 .levelup-cards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 32px;
-    padding: 50px;
     list-style: none;
 }
 
-.levelup-cards li a {
+.levelup-cards li a img {
     border: #000 1px solid;
-    padding: 10px;
-
+    width: 200px;
+    height: 200px;
+    margin: 10px;
 }
 
 .levelup-cards h4 {
     border: #000 1px solid;
-    padding: 5px;
     width: 200px;
     height: 30px;
 }
 
 .levelup-cards p {
-    display: inline-flex;
     border: #000 1px solid;
-    padding: 5px;
     width: 200px;
     height: 100px;
+    margin: 10px;
 }
 /* END */
 
