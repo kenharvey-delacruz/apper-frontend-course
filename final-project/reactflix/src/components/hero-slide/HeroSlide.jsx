@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import tmdbApi, { category, movieType } from "../../api/tmdbApi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import apiConfig from "../../api/apiConfig";
@@ -57,21 +57,27 @@ const HeroSlide = () => {
   const [currentModal, setCurrentModal] = useState(null);
   const [videoSrc, setVideoSrc] = useState(null);
   const swiperRef = useRef(null);
+  const location = useLocation();
+  const categoryFromPath = location.pathname.split("/")[1];
 
   useEffect(() => {
     const getMovies = async () => {
       const params = { page: 1 };
       try {
-        const response = await tmdbApi.getMoviesList(movieType.popular, {
-          params,
-        });
+        const response = await tmdbApi.getMoviesList(
+          movieType[categoryFromPath],
+          {
+            params,
+          }
+        );
+        console.log("API Response:", response);
         setMovieItems(response.results.slice(0, 10));
       } catch {
         console.log("error");
       }
     };
     getMovies();
-  }, []);
+  }, [categoryFromPath]);
 
   useEffect(() => {
     const slideInterval = setInterval(() => {

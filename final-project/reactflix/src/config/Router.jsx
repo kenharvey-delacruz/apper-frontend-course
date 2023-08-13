@@ -1,15 +1,22 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import Catalog from "../pages/Catalog";
-import Detail from "../pages/Detail";
+import Popular from "../pages/Popular";
+import TopRated from "../pages/TopRated";
+import Upcoming from "../pages/Upcoming";
 
 const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/:category" element={<Catalog />} />
+
+      {/* Specific paths for movie types */}
+      <Route path="/popular" element={<Popular />} />
+      <Route path="/top_rated" element={<TopRated />} />
+      <Route path="/upcoming" element={<Upcoming />} />
+
+      {/* <Route path="/:category" element={<Home />} />
       <Route path="/:category/:id" element={<Detail />} />
-      <Route path="/:category/search/:keyword" element={<Catalog />} />
+      <Route path="/:category/search/:keyword" element={<Catalog />} /> */}
       <Route
         path="*"
         element={<div> Not Found or You do not have permission.</div>}

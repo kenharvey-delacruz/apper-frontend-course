@@ -10,10 +10,16 @@ const headerNav = [
     path: "/",
   },
   {
-    display: "Movies",
+    display: "Popular",
+    path: "/popular",
   },
   {
-    display: "TV Series",
+    display: "Top rated",
+    path: "/top_rated",
+  },
+  {
+    display: "Upcoming",
+    path: "/upcoming",
   },
 ];
 
@@ -25,6 +31,7 @@ const Header = () => {
 
   useEffect(() => {
     const shrinkHeader = () => {
+      window.addEventListener("scroll", shrinkHeader);
       if (
         document.body.scrollTop > 100 ||
         document.documentElement.scrollTop > 100
