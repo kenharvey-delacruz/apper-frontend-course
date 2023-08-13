@@ -37,7 +37,7 @@ const HeroSlideItem = (props) => {
           <div className="overview">{item.overview}</div>
           <div className="btns">
             <Button onClick={() => navigate("/movie/" + item.id)}>
-              Watch now
+              Read more
             </Button>
             <OutlineButton onClick={setModalActive}>
               Watch Trailer
@@ -122,14 +122,21 @@ const TrailerModal = (props) => {
   const iframeRef = useRef(null);
 
   useEffect(() => {
-    if (props.videoSrc) {
+    if (props.videoSrc && props.isOpen) {
       iframeRef.current.setAttribute("src", props.videoSrc);
+    } else {
+      iframeRef.current.removeAttribute("src");
     }
-  }, [props.videoSrc]);
+  }, [props.videoSrc, props.isOpen]);
+
+  const handleModalClose = () => {
+    iframeRef.current.removeAttribute("src");
+    if (props.onClose) props.onClose();
+  };
 
   return (
     <Modal active={props.isOpen} id={`modal_${props.item.id}`}>
-      <ModalContent onClose={props.onClose}>
+      <ModalContent onClose={handleModalClose}>
         <iframe
           ref={iframeRef}
           width="100%"

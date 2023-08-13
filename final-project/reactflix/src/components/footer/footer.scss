@@ -30,9 +30,17 @@
     z-index: 1;
     position: relative;
     display: flex;
-    flex-direction: column; // stack logo and menus vertically
-    align-items: center; // center the logo and menu container
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+
+    @include tablet {
+      width: 75%; // Increase the width on tablets to fit better
+    }
+
+    @include mobile {
+      width: 100%; // Use full width on mobile for more space
+    }
 
     &__logo {
       display: flex;
@@ -47,6 +55,17 @@
       align-items: center;
       font-weight: 500;
       padding: 0 50px;
+
+      @include tablet {
+        flex-direction: column; // Stack menus vertically on tablets
+        align-items: center;
+        padding: 0 25px; // Reduce padding on tablets
+      }
+
+      @include mobile {
+        flex-direction: column; // Stack menus vertically on mobiles too
+        padding: 0 10px; // Reduce padding even further for mobile
+      }
     }
   }
 }

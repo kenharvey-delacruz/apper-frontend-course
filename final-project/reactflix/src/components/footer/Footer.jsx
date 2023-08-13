@@ -19,9 +19,9 @@ const Footer = () => {
         </div>
         <div className="footer__content__menus">
           <Link to="/">Home</Link>
-          <Link to="/">Contact Us</Link>
-          <Link to="/">Terms of Services</Link>
-          <Link to="/">About Us</Link>
+          <Link to="/contact_us">Contact Us</Link>
+          <Link to="/terms_of_services">Terms of Services</Link>
+          <Link to="/about_us">About Us</Link>
         </div>
       </div>
       Footer

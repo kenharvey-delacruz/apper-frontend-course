@@ -13,6 +13,7 @@
   background-repeat: no-repeat;
 
   &::before {
+    // z-index: -1;
     content: "";
     position: absolute;
     top: 0;
@@ -23,6 +24,7 @@
   }
 
   &::after {
+    // z-index: -1;
     content: "";
     position: absolute;
     bottom: 0;
@@ -33,6 +35,7 @@
   }
 
   &__content {
+    z-index: 2;
     @include flex(center, center);
     position: relative;
 

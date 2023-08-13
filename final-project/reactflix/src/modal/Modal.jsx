@@ -18,15 +18,25 @@ const Modal = (props) => {
 };
 
 Modal.propTypes = {
-  active: PropTypes.string.bool,
+  active: PropTypes.bool,
   id: PropTypes.string,
   children: PropTypes.node,
 };
 
 export const ModalContent = (props) => {
   const contentRef = useRef(null);
+
+  // Using videoRef from props to refer to the video element
+  const videoRef = props.videoRef;
+
   const closeModal = () => {
     contentRef.current.parentNode.classList.remove("active");
+
+    // Pause the video if it exists
+    if (videoRef && videoRef.current) {
+      videoRef.current.pause();
+    }
+
     if (props.onClose) props.onClose();
   };
 
@@ -42,6 +52,10 @@ export const ModalContent = (props) => {
 
 ModalContent.propTypes = {
   onClose: PropTypes.func,
+  videoRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  ]),
 };
 
 export default Modal;

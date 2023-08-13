@@ -1,0 +1,25 @@
+@use "../scss/" as *;
+
+.global-content {
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .kb-title {
+      color: $main-color;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .pane-wrapper {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
