@@ -1,14 +1,14 @@
-import { Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Popular from "../pages/Popular";
 import TopRated from "../pages/TopRated";
 import Upcoming from "../pages/Upcoming";
 import TermsOfServices from "../pages/TermsOfServices";
+import { useEffect } from "react";
 
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<RedirectToPopular />} />
 
       <Route path="/popular" element={<Popular />} />
       <Route path="/top_rated" element={<TopRated />} />
@@ -23,6 +23,14 @@ const Router = () => {
       />
     </Routes>
   );
+};
+
+const RedirectToPopular = () => {
+  let navigate = useNavigate();
+  useEffect(() => {
+    navigate("/popular");
+  }, [navigate]);
+  return null;
 };
 
 export default Router;

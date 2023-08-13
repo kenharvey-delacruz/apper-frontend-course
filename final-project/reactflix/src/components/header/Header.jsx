@@ -6,10 +6,6 @@ import logo from "../../assets/react.png";
 import { Link, useLocation } from "react-router-dom";
 const headerNav = [
   {
-    display: "Home",
-    path: "/",
-  },
-  {
     display: "Popular",
     path: "/popular",
   },
