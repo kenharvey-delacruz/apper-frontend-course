@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/TermsOfServices.scss";
+import "../scss/termsofservices.scss";
 
 const TermsOfServices = () => {
   return (
